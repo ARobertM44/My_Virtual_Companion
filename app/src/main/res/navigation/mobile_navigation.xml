@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/recognitionFragment">
+
+    <fragment
+        android:id="@+id/recognitionFragment"
+        android:name="com.example.demohack.fragments.SpeechToTextFragment"
+        android:label="Recognition"
+        tools:layout="@layout/fragment_recognition" >
+        <action
+            android:id="@+id/action_recognition_to_second"
+            app:destination="@+id/secondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.demohack.fragments.SpeechToTextFragment"
+        android:label="Transcript"
+        tools:layout="@layout/fragment_speech_to_text" />
+</navigation>

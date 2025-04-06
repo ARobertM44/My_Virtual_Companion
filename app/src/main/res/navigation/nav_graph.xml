@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_recognition">
+
+    <fragment
+        android:id="@+id/navigation_recognition"
+        android:name="com.example.demohack.fragments.RecognitionFragment"
+        android:label="Recognition"
+        tools:layout="@layout/fragment_recognition" />
+
+    <fragment
+        android:id="@+id/navigation_other"
+        android:name="com.example.demohack.fragments.SpeechToTextFragment"
+        android:label="Transcript"
+        tools:layout="@layout/fragment_speech_to_text" />
+</navigation>
